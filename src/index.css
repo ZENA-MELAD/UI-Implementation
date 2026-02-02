@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@theme{
+  --text-custom:13px;
+}
 @layer base {
   body {
     font-family: "Roboto", sans-serif;
