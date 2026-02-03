@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../Root";
 import ChatsPage from "../Pages/ChatsPage/ChatsPage";
-import ChatConversation from "../Pages/ChatConversation/ChatConversation";
+import Search from "../Pages/Search/Search";
+import IndividualChat from "../Pages/IndividualChat/IndividualChat";
 
 const router=createBrowserRouter([{
     path:"/",
@@ -10,8 +11,12 @@ const router=createBrowserRouter([{
         path:"/",
         element:<ChatsPage/>},
         {
-            path:"/chatconversation/:id",
-            element:<ChatConversation/>
+            path:"/individualchat/:id",
+            element:<IndividualChat/>
+        },
+        {
+            path:"/search",
+            element:<Search/>
         }
         ]
 

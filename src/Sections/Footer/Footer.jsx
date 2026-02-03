@@ -4,17 +4,19 @@ import { CiSearch } from "react-icons/ci";
 import { GoPlus } from "react-icons/go";
 import { IoChatbubbleOutline } from "react-icons/io5";
 import { BsPerson } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate=useNavigate()
   return (
     <div className="p-2 w-full  border border-t-gray-300  border-transparent flex flex-col justify-center items-center gap-4">
       <div className="w-full flex justify-around items-center md:justify-center md:gap-x-28">
-        <AiOutlineHome size={20} />
-        <CiSearch size={20} />
+        <AiOutlineHome size={20} className=" cursor-pointer" />
+        <CiSearch size={22} className=" cursor-pointer"  onClick={()=>navigate("/search")}/>
         <div className="w-16 h-9 rounded-3xl bg-gradient-to-r from-[#FF4D00]  to-[#FF00D6]  flex justify-center items-center">
-          <GoPlus size={20} color="white" />
+          <GoPlus size={20} color="white"  className=" cursor-pointer"/>
         </div>
-        <IoChatbubbleOutline size={20} />
-        <BsPerson size={20} />
+        <IoChatbubbleOutline size={20} onClick={()=>navigate("/")} className=" cursor-pointer" />
+        <BsPerson size={20} className=" cursor-pointer" />
       </div>
       <div className="w-28 h-1 bg-black"></div>
     </div>

@@ -6,7 +6,7 @@ import { IoIosArrowBack } from "react-icons/io";
 const ChatsPage = () => {
   const navigate = useNavigate();
   const handleClick = (id) => {
-    navigate(`/chatconversation/${id}`);
+    navigate(`/individualchat/${id}`);
   };
   return (
     <div className="w-full flex flex-col flex-1">

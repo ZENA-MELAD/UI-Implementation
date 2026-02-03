@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Chats from "../../assets/Data/Chats";
 import { IoIosArrowBack } from "react-icons/io";
 import Img from "../../assets/Images/image5.png";
-const ChatConversation = () => {
+const IndividualChat = () => {
   const navigateBack = useNavigate();
   const { id } = useParams();
   const chat = Chats.find((chat) => chat.id === Number(id));
@@ -54,4 +54,4 @@ const ChatConversation = () => {
     </div>
   );
 };
-export default ChatConversation;
+export default IndividualChat;
