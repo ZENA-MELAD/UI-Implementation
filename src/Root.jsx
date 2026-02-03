@@ -5,7 +5,7 @@ import Footer from './Sections/Footer/Footer'
 
 const Root = () => {
   return (
-    <div className='App'>
+    <div className='App min-h-screen flex flex-col'>
         <Header/>
         <Outlet/>
         <Footer/>

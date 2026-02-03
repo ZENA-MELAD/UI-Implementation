@@ -30,5 +30,5 @@ const Chats = [
     content:
       "Wanted to ask if you’re available for a portrait shoot next week.",
   },
-];
+  ];
 export default Chats;
